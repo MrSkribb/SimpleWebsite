@@ -1,0 +1,141 @@
+h1 {
+    text-align: center;
+  }
+
+  /* Handles margin and page scale */ 
+  #page {
+    max-width: 100%;
+    margin: auto;  
+  
+  }
+  @media screen and (min-width: 40em) { 
+    #page {
+      max-width: 50em;
+    }
+  }
+  
+  @media screen and (min-width: 64em) { 
+    #page {
+      max-width: 75em;
+    }  
+  }
+    /* Organises page content in flex boxes, aligning items from the top of the page */ 
+
+  .creatormenu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .item {
+    background-color: lightgrey;
+    margin: 10px;
+    flex: 1;
+  }
+  
+  .item img {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  
+   /* Keeps image on the left of the page and content on the right, 2 column style layout  */ 
+
+  .image-left {
+
+    padding-top: 1%;
+    float: left;
+    width: 20%;
+    margin-right: 3%;
+  }
+
+   /* Table styling */ 
+  table, th, td {
+    border: 2px solid;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  /* Creates content with relative positioning */ 
+  .container {
+    position: relative;
+  }
+
+  /* Space between form content */
+  .input {
+    padding-top: 5px;
+  }
+  
+   /* Positions creator table inside the container */ 
+  .creatordata{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    
+  }
+
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* Nav bar styling */
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+ 
+.return {
+  color: black;
+}
+
+li a:hover {
+    background-color: #111;
+  }
+
+   /* Link css */
+ 
+  a:link {
+      color: white;
+    }
+    
+    
+    a:hover {
+      color: red;
+    }
+  
+  /* Changes colour and background colour of <header> components */ 
+  header {
+      color:black;
+      background-color: burlywood;
+  }
+  
+  /* Changes colour and background colour of <footer> components */ 
+  footer {
+      color: white;
+      background-color: gray;
+      position:fixed;
+      bottom: 10px;;
+  
+    
+  }
